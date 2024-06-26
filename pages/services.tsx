@@ -1,6 +1,4 @@
 import Image from "next/image";
-import "../styles/services.module.css";
-
 const Services: React.FC = () => {
   return (
     <>

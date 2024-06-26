@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../styles/not-found.module.css";
+
 function NotFoundPage() {
   return (
     <>

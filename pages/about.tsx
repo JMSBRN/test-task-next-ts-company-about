@@ -1,5 +1,3 @@
-import "../styles/about.module.css";
-
 function About() {
   return (
     <>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHero from "./sections/hero/SectionHero";
 function HomePage() {
   return (
     <div>
@@ -12,22 +13,7 @@ function HomePage() {
             <a href="index.html#contact">Contact</a>
           </div>
         </div>
-        <section id="hero">
-          <h1>
-            Pure Design, <span>Pure Living.</span>
-          </h1>
-          <p>Elevate Your Space with Minimalist Design.</p>
-          <Image
-            width={600}
-            height={600}
-            src={require("../public/images/hero_bg.jpg")}
-            alt="Hero Image"
-            loading="lazy"
-          />
-          <a className="button" href="#services">
-            Get Started
-          </a>
-        </section>
+        <SectionHero />
         <section id="features">
           <h2>Our Features</h2>
           <div className="feature">
@@ -278,7 +264,6 @@ function HomePage() {
             </a>
           </div>
         </section>
-
         <section id="pricing">
           <h2>Pricing Plans</h2>
           <p>
