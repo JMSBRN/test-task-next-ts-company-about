@@ -1,3 +1,5 @@
+import "../styles/about.module.css";
+
 function About() {
   return <div>About</div>;
 }
