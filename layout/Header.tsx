@@ -24,14 +24,17 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <div className="logo">
-        <Image
-          loading="lazy"
-          src="/favicon.ico"
-          alt="Logo"
-          width={30}
-          height={30}
-        />
+      <div className="container">
+        <div className="logo">
+          <div>Arma</div>
+          <Image
+            loading="lazy"
+            src="/favicon.ico"
+            alt="Logo"
+            width={30}
+            height={30}
+          />
+        </div>
         <div className="select-lang-wrapper">
           <select
             name="lang"
@@ -42,26 +45,26 @@ const Header: React.FC = () => {
             <option value={"ru"}>RU</option>
           </select>
         </div>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/">{t("navlink.home")}</Link>
+            </li>
+            <li>
+              <Link href="/about">{t("navlink.about")}</Link>
+            </li>
+            <li>
+              <Link href="/services">{t("navlink.services")}</Link>
+            </li>
+            <li>
+              <Link href="/contact">{t("navlink.contact")}</Link>
+            </li>
+            <li>
+              <Link href="/team">{t("navlink.team")}</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">{t("header.home")}</Link>
-          </li>
-          <li>
-            <Link href="/about">{t("header.about")}</Link>
-          </li>
-          <li>
-            <Link href="/services">{t("header.services")}</Link>
-          </li>
-          <li>
-            <Link href="/contact">{t("header.contact")}</Link>
-          </li>
-          <li>
-            <Link href="/team">{t("header.team")}</Link>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
