@@ -73,9 +73,10 @@ section {
   padding: 60px 20px;
   text-align: center;
 }
-section .button {
+.button {
   display: block;
-  width: 12rem;
+  width: auto;
+  max-width: 20rem;
   padding: 10px 20px;
   font-size: 1.3em;
   background-color: var(--pr-700-color);
@@ -99,11 +100,13 @@ section:nth-child(odd) {
 
 main,
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 header {
+  height: auto;
+  padding: 1rem;
   background: var(--pr-700-color);
   color: var(--pr-100-color);
 }
@@ -111,7 +114,14 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0.7rem 1.2rem;
+}
+header .container .logo-and-lang {
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header *:only-of-type a {
@@ -222,6 +232,8 @@ header *:only-of-type a:hover {
 }
 
 #services .service img {
+  width: 100px;
+  height: 200px;
   flex-basis: 20%;
 }
 
@@ -509,6 +521,7 @@ footer .logo {
   padding: 20px;
   flex-basis: 100%;
 }
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -531,21 +544,24 @@ footer .container p {
   color: var(--pr-400-color);
   font-size: 0.8em;
 }
-#thanks {
+#thanks,
+#not-found {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: var(--sc-bg-color);
 }
-.thanks__container {
+.thanks__container,
+.not-found__container {
   background-color: var(--pr-200-color);
   padding: 20px;
   text-align: center;
   opacity: 0.8;
 }
 
-.thanks__container h1 {
+.thanks__container h1,
+.not-found__container h1 {
   font-size: 2.3rem;
 }
 
@@ -574,7 +590,7 @@ footer .container p {
     display: flex;
   }
 
-  .header__nav-links {
+  header * nav {
     display: none;
   }
 }

@@ -8,8 +8,8 @@ const Services: React.FC = () => {
           <h3>Residential Design</h3>
           <div className="bottom-content">
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src={require("../public/images/direction2-icon.png")}
               alt="Residential Design"
               loading="lazy"
@@ -26,8 +26,8 @@ const Services: React.FC = () => {
           <h3>Commercial Design</h3>
           <div className="bottom-content">
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src={require("../public/images/direction3-icon.png")}
               alt="Commercial Design"
               loading="lazy"
@@ -44,8 +44,8 @@ const Services: React.FC = () => {
           <h3>Public Spaces</h3>
           <div className="bottom-content">
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src={require("../public/images/direction4-icon.png")}
               alt="Public Spaces"
               loading="lazy"
@@ -63,11 +63,11 @@ const Services: React.FC = () => {
           <h3>Interior Styling</h3>
           <div className="bottom-content">
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src={require("../public/images/direction5-icon.png")}
               alt="Interior Styling"
-              loading="lazy"
+              priority={true}
             />
             <p>
               Our interior styling services focus on the finer details of
@@ -81,8 +81,8 @@ const Services: React.FC = () => {
           <h3>Consultation Services</h3>
           <div className="bottom-content">
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src={require("../public/images/office_people.png")}
               alt="Consultation Services"
               loading="lazy"

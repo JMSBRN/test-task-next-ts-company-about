@@ -1,9 +1,15 @@
 {
-    "navlink": {
-        "home": "главная",
-        "about": "o нас",
-        "services": "услуги",
-        "contact": "контакты",
-        "team": "команда"
-    }
+    "home": "главная",
+    "about": "o нас",
+    "services": "услуги",
+    "contact": "контакты",
+    "team": "команда",
+    "getStarted": "начать",
+    "contactUs": "свяжитесь с нами",
+    "privacyPolicy": "политика конфиденциальности",
+    "termsOfUse": "условия использования",
+    "copyright": "авторское право",
+    "allRightsReserved": "все права защищены",
+    "signUpNow": "зарегистрируйтесь сейчас",
+    "returnToHome": "вернуться на главную"
 }

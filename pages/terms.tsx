@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Terms() {
@@ -121,9 +122,9 @@ function Terms() {
           <br />
           Art City, AC 12345
           <br />
-          <a href="mailto:info@example.com">
+          <Link href="mailto:info@example.com">
             <strong>Email:</strong>info@example.com
-          </a>
+          </Link>
           <br />
           Phone: (123) 456-7890
         </address>

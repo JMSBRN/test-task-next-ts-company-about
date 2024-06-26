@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Contact() {
   return (
     <>
@@ -8,7 +10,7 @@ function Contact() {
           services, pricing, or anything else, our team is ready to answer all
           your questions.
         </p>
-        <form id="contactForm" action="thanks.html" method="post">
+        <form id="contactForm" action="/thanks" method="post">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -28,8 +30,8 @@ function Contact() {
           <div className="checkbox-container">
             <input type="checkbox" id="agreement" name="agreement" required />
             <label htmlFor="agreement">
-              I agree to the <a href="policy.html">privacy policy</a> and
-              <a href="terms.html">terms and conditions</a>.
+              I agree to the <Link href="/policy">privacy policy</Link> and
+              <Link href="/terms">terms and conditions</Link>
             </label>
           </div>
 
@@ -40,14 +42,14 @@ function Contact() {
 
         <div className="contact-info">
           <p>
-            <a href="mailto:info@example.com">
+            <Link href="mailto:info@example.com">
               <strong>Email:</strong>info@example.com
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="tel:+48 123 456-7890">
+            <Link href="tel:+48 123 456-7890">
               <strong>Phone:</strong>+48 (123) 456-7890
-            </a>
+            </Link>
           </p>
           <p>
             <strong>Address:</strong> 123 Main St, City, Country

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import React from "react";
+import NavLinks from "@/components/NavLinks";
 
 function Footer() {
   const { t } = useTranslation("common");
@@ -9,13 +10,7 @@ function Footer() {
       <div className="container">
         <div className="logo">Logo</div>
         <div className="footer-content">
-          <nav className="footer__nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/team">Team</Link>
-          </nav>
+          <NavLinks />
           <div className="social-media">
             <Link href="#">Facebook</Link>
             <Link href="#">Twitter</Link>

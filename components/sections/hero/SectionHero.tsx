@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Image from "next/image";
 function SectionHero() {
   return (
@@ -15,9 +16,7 @@ function SectionHero() {
           alt="Hero Image"
           loading="lazy"
         />
-        <a className="button" href="#services">
-          Get Started
-        </a>
+        <Button path={"/services"} text={"getStarted"} />
       </section>
     </>
   );

@@ -1,3 +1,5 @@
+import NavLinks from "@/components/NavLinks";
+import SelectLanguages from "@/components/SelectLanguages";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { ChangeEvent, useEffect, useState } from "react";
@@ -12,7 +14,7 @@ const Header: React.FC = () => {
     setStorageValue(currentLanguage);
   }, []);
 
-  const { t, i18n } = useTranslation("common");
+  const { i18n } = useTranslation("common");
 
   const handleChangeLang = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = e.target.value;
@@ -24,14 +26,13 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="container">
-        <h2>Logo</h2>
-        <nav className="header__nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/team">Team</Link>
-        </nav>
+        <div className="logo-and-lang">
+          <Link href={"/"}>
+            <h2>Logo</h2>
+          </Link>
+          <SelectLanguages value={storageValue} onChange={handleChangeLang} />
+        </div>
+        <NavLinks />
         <div className="burger" id="burger">
           <div></div>
           <div></div>

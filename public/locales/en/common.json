@@ -1,9 +1,15 @@
 {
-    "navlink": {
-        "home": "home",
-        "about": "about",
-        "services": "services",
-        "contact": "contact",
-        "team": "team"
-    }
+    "home": "home",
+    "about": "about",
+    "services": "services",
+    "contact": "contact",
+    "team": "team",
+    "getStarted": "get started",
+    "contactUs": "contact us",
+    "privacyPolicy": "privacy policy",
+    "termsOfUse": "terms of use",
+    "copyright": "copyright",
+    "allRightsReserved": "all rights reserved",
+    "signUpNow": "sign up now",
+    "returnToHome": "return to home"
 }

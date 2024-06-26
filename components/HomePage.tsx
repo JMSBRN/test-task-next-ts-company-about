@@ -1,16 +1,18 @@
 import Image from "next/image";
 import SectionHero from "./sections/hero/SectionHero";
+import Button from "./Button";
+import Link from "next/link";
 function HomePage() {
   return (
     <div>
       <main>
         <div className="modal" id="modal">
           <div className="modal-content">
-            <a href="index.html#hero">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#services">Services</a>
-            <a href="index.html#testimonials">Testimonials</a>
-            <a href="index.html#contact">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/team">Team</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
         <SectionHero />
@@ -50,9 +52,7 @@ function HomePage() {
               management.
             </p>
           </div>
-          <a href="index.html#contact" className="button">
-            Contact Us
-          </a>
+          <Button path={"/contact"} text={"contactUs"} />
         </section>
         <section id="testimonials">
           <h2>What Our Customers Say</h2>
@@ -248,20 +248,8 @@ function HomePage() {
             together.
           </p>
           <div className="cta-buttons">
-            <a
-              className="button"
-              href="#contact
-          "
-            >
-              Sign Up Now
-            </a>
-            <a
-              className="button"
-              href="#contact
-          "
-            >
-              Contact Us
-            </a>
+            <Button path={"/contact"} text={"signUpNow"} />
+            <Button path={"/contact"} text={"contactUs"} />
           </div>
         </section>
         <section id="pricing">
