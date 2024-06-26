@@ -106,3 +106,5 @@ Create a web application for the company using the Next.js framework. The applic
 - Styling: CSS Modules
 - Database: PostgreSQL
 - Hosting: Vercel or another preferred provider
+
+### Deploy: https://test-task-next-ts-company-about-14irp1hbs-jmsbrns-projects.vercel.app/
