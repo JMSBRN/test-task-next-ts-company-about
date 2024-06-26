@@ -28,145 +28,45 @@ function HomePage() {
             Get Started
           </a>
         </section>
-        <section id="about">
-          <h2>About Us</h2>
-          <p>
-            Our mission is to create serene, functional, and aesthetically
-            pleasing spaces that embody the principles of minimalism. We believe
-            in the power of simplicity and strive to design environments that
-            are both beautiful and practical, enhancing the quality of life for
-            our clients.
-          </p>
-          <p>
-            We started in 2015 with a vision to redefine modern living through
-            minimalist design. Over the years, we have grown into a team of
-            passionate designers, architects, and artists who are dedicated to
-            transforming spaces into tranquil sanctuaries. Our work spans
-            residential, commercial, and public spaces, all unified by our
-            commitment to minimalism.
-          </p>
-          <p>
-            Our approach is rooted in a deep understanding of our clients needs
-            and a meticulous attention to detail. We collaborate closely with
-            our clients to ensure that every project is tailored to their unique
-            preferences and lifestyle. From concept to completion, we are
-            committed to delivering exceptional design solutions that stand the
-            test of time.
-          </p>
-          <p>
-            We take pride in our sustainable practices and strive to use
-            eco-friendly materials and techniques in all our projects. Our goal
-            is to create spaces that not only look good but also feel good,
-            promoting a sense of calm and well-being.
-          </p>
-          <h2>Meet Our Team</h2>
-          <p>
-            Our team is a diverse group of talented professionals who share a
-            passion for minimalism and design excellence. From experienced
-            architects to innovative interior designers, each member brings a
-            unique perspective and skill set to the table. Together, we work
-            seamlessly to bring our clients visions to life.
-          </p>
-          <p>
-            We invite you to explore our portfolio and see the transformative
-            power of minimalist design. Whether you are looking to redesign your
-            home, office, or any other space, we are here to help you create a
-            place that is truly your own.
-          </p>
-        </section>
-        <section id="services">
-          <h2>Our Services</h2>
-          <div className="service">
-            <h3>Residential Design</h3>
-            <div className="bottom-content">
-              <Image
-                width={200}
-                height={200}
-                src={require("../public/images/direction2-icon.png")}
-                alt="Residential Design"
-                loading="lazy"
-              />
-              <p>
-                We specialize in creating minimalist residential spaces that are
-                both functional and aesthetically pleasing. Our team works
-                closely with homeowners to design interiors that reflect their
-                personal style while promoting a sense of calm and well-being.
-              </p>
-            </div>
+        <section id="features">
+          <h2>Our Features</h2>
+          <div className="feature">
+            <h3>Custom Design Solutions</h3>
+            <p>
+              We create personalized design solutions that reflect your style
+              and preferences, ensuring your space is both beautiful and
+              functional.
+            </p>
           </div>
-          <div className="service">
-            <h3>Commercial Design</h3>
-            <div className="bottom-content">
-              <Image
-                width={200}
-                height={200}
-                src={require("../public/images/direction3-icon.png")}
-                alt="Commercial Design"
-                loading="lazy"
-              />
-              <p>
-                Our commercial design services aim to transform workplaces into
-                inspiring and efficient environments. We focus on clean lines,
-                open spaces, and natural light to create productive and
-                enjoyable spaces for businesses of all sizes.
-              </p>
-            </div>
+
+          <div className="feature">
+            <h3>Sustainable Practices</h3>
+            <p>
+              Our commitment to sustainability means we use eco-friendly
+              materials and practices in all our projects, promoting a healthier
+              environment.
+            </p>
           </div>
-          <div className="service">
-            <h3>Public Spaces</h3>
-            <div className="bottom-content">
-              <Image
-                width={200}
-                height={200}
-                src={require("../public/images/direction4-icon.png")}
-                alt="Public Spaces"
-                loading="lazy"
-              />
-              <p>
-                We design public spaces that are inviting and functional, using
-                minimalist principles to create areas that encourage community
-                interaction and engagement. From parks to public buildings, our
-                designs enhance the user experience while maintaining simplicity
-                and elegance.
-              </p>
-            </div>
+
+          <div className="feature">
+            <h3>Expert Consultation</h3>
+            <p>
+              Our team of experienced designers offers expert consultation to
+              guide you through every step of the design process.
+            </p>
           </div>
-          <div className="service">
-            <h3>Interior Styling</h3>
-            <div className="bottom-content">
-              <Image
-                width={200}
-                height={200}
-                src={require("../public/images/direction5-icon.png")}
-                alt="Interior Styling"
-                loading="lazy"
-              />
-              <p>
-                Our interior styling services focus on the finer details of
-                design, including furniture selection, color schemes, and decor.
-                We help clients achieve a cohesive and harmonious look that
-                aligns with the principles of minimalism.
-              </p>
-            </div>
+
+          <div className="feature">
+            <h3>Innovative Technology</h3>
+            <p>
+              We leverage the latest technology to bring your vision to life,
+              providing detailed visualizations and efficient project
+              management.
+            </p>
           </div>
-          <div className="service">
-            <h3>Consultation Services</h3>
-            <div className="bottom-content">
-              <Image
-                width={200}
-                height={200}
-                src={require("../public/images/office_people.png")}
-                alt="Consultation Services"
-                loading="lazy"
-              />
-              <p>
-                We offer design consultation services for clients who need
-                professional guidance on their projects. Our experts provide
-                valuable insights and recommendations to help clients achieve
-                their design goals while staying true to minimalist principles.
-              </p>
-            </div>
-          </div>
+          <a href="index.html#contact" className="button">
+            Contact Us
+          </a>
         </section>
         <section id="testimonials">
           <h2>What Our Customers Say</h2>
@@ -378,46 +278,7 @@ function HomePage() {
             </a>
           </div>
         </section>
-        <section id="features">
-          <h2>Our Features</h2>
-          <div className="feature">
-            <h3>Custom Design Solutions</h3>
-            <p>
-              We create personalized design solutions that reflect your style
-              and preferences, ensuring your space is both beautiful and
-              functional.
-            </p>
-          </div>
 
-          <div className="feature">
-            <h3>Sustainable Practices</h3>
-            <p>
-              Our commitment to sustainability means we use eco-friendly
-              materials and practices in all our projects, promoting a healthier
-              environment.
-            </p>
-          </div>
-
-          <div className="feature">
-            <h3>Expert Consultation</h3>
-            <p>
-              Our team of experienced designers offers expert consultation to
-              guide you through every step of the design process.
-            </p>
-          </div>
-
-          <div className="feature">
-            <h3>Innovative Technology</h3>
-            <p>
-              We leverage the latest technology to bring your vision to life,
-              providing detailed visualizations and efficient project
-              management.
-            </p>
-          </div>
-          <a href="index.html#contact" className="button">
-            Contact Us
-          </a>
-        </section>
         <section id="pricing">
           <h2>Pricing Plans</h2>
           <p>
@@ -602,69 +463,6 @@ function HomePage() {
               will work closely with you to ensure the final design meets your
               expectations.
             </p>
-          </div>
-        </section>
-        <section id="contact">
-          <h2>Contact Us</h2>
-          <p>
-            We did love to hear from you! Whether you have a question about our
-            services, pricing, or anything else, our team is ready to answer all
-            your questions.
-          </p>
-          <form id="contactForm" action="thanks.html" method="post">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label htmlFor="message">Message:</label>
-            <textarea
-              cols={30}
-              rows={10}
-              minLength={10}
-              id="message"
-              name="message"
-              required
-            ></textarea>
-
-            <div className="checkbox-container">
-              <input type="checkbox" id="agreement" name="agreement" required />
-              <label htmlFor="agreement">
-                I agree to the <a href="policy.html">privacy policy</a> and
-                <a href="terms.html">terms and conditions</a>.
-              </label>
-            </div>
-
-            <button className="button" type="submit">
-              Send
-            </button>
-          </form>
-
-          <div className="contact-info">
-            <p>
-              <a href="mailto:info@example.com">
-                <strong>Email:</strong>info@example.com
-              </a>
-            </p>
-            <p>
-              <a href="tel:+48 123 456-7890">
-                <strong>Phone:</strong>+48 (123) 456-7890
-              </a>
-            </p>
-            <p>
-              <strong>Address:</strong> 123 Main St, City, Country
-            </p>
-          </div>
-          <div className="map">
-            <h3>Our Location</h3>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468125!3d37.77492977975968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b6b9d%3A0x4c4b8e8e8e8e8e8e!2s123%20Main%20St%2C%20San%20Francisco%2C%20CA%2094105%2C%20USA!5e0!3m2!1sen!2s!4v1593790820742!5m2!1sen!2s"
-              width="80%"
-              height="auto"
-              aria-hidden="false"
-              tabIndex={0}
-            ></iframe>
           </div>
         </section>
       </main>

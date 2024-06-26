@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
 import Link from "next/link";
 import { ChangeEvent, useEffect, useState } from "react";
 
@@ -27,11 +26,11 @@ const Header: React.FC = () => {
       <div className="container">
         <h2>Logo</h2>
         <nav className="header__nav-links">
-          <Link href="index.html#hero">Home</Link>
-          <Link href="index.html#about">About</Link>
-          <Link href="index.html#services">Services</Link>
-          <Link href="index.html#testimonials">Testimonials</Link>
-          <Link href="index.html#contact">Contact</Link>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/team">Team</Link>
         </nav>
         <div className="burger" id="burger">
           <div></div>

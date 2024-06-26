@@ -10,24 +10,23 @@ function Footer() {
         <div className="logo">Logo</div>
         <div className="footer-content">
           <nav className="footer__nav-links">
-            <Link href="index.html#hero">Home</Link>
-            <Link href="index.html#about">About</Link>
-            <Link href="index.html#services">Services</Link>
-            <Link href="index.html#testimonials">Testimonials</Link>
-            <Link href="index.html#contact">Contact</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/team">Team</Link>
           </nav>
           <div className="social-media">
-            <Link href="index.html">Facebook</Link>
-            <Link href="index.html">Twitter</Link>
-            <Link href="index.html">LinkedIn</Link>
+            <Link href="#">Facebook</Link>
+            <Link href="#">Twitter</Link>
+            <Link href="#">LinkedIn</Link>
           </div>
           <div className="footer-privacy-links">
-            <Link href="privacy.html">Privacy Policy</Link>
-            <Link href="terms.html">Terms of Service</Link>
-            <Link href="index.html">Newsletter Signup</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
           </div>
         </div>
-        <p>&copy; 2022 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Design Studio. All rights reserved.</p>
       </div>
     </footer>
   );
