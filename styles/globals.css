@@ -123,6 +123,27 @@ header .container .logo-and-lang {
   align-items: center;
   justify-content: space-between;
 }
+.select-languages {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.select-languages select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: var(--pr-300-color);
+  border: none;
+  background-color: var(--heder-bg-color);
+}
+
+.select-languages select:focus {
+  outline: none;
+  border-color: var(--pr-200-color);
+}
+.select-languages select option {
+  background-color: var(--sc-bg-color);
+}
 
 header *:only-of-type a {
   margin: 0 10px;

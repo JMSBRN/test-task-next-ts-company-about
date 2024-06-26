@@ -1,3 +1,4 @@
+import Form from "@/components/Form";
 import Link from "next/link";
 
 function Contact() {
@@ -10,36 +11,7 @@ function Contact() {
           services, pricing, or anything else, our team is ready to answer all
           your questions.
         </p>
-        <form id="contactForm" action="/thanks" method="post">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label htmlFor="message">Message:</label>
-          <textarea
-            cols={30}
-            rows={10}
-            minLength={10}
-            id="message"
-            name="message"
-            required
-          ></textarea>
-
-          <div className="checkbox-container">
-            <input type="checkbox" id="agreement" name="agreement" required />
-            <label htmlFor="agreement">
-              I agree to the <Link href="/policy">privacy policy</Link> and
-              <Link href="/terms">terms and conditions</Link>
-            </label>
-          </div>
-
-          <button className="button" type="submit">
-            Send
-          </button>
-        </form>
-
+        <Form />
         <div className="contact-info">
           <p>
             <Link href="mailto:info@example.com">
