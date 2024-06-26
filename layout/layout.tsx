@@ -5,7 +5,7 @@ function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </div>
   );

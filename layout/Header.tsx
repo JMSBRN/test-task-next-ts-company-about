@@ -25,45 +25,19 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="container">
-        <div className="logo">
-          <div>Arma</div>
-          <Image
-            loading="lazy"
-            src="/favicon.ico"
-            alt="Logo"
-            width={30}
-            height={30}
-          />
-        </div>
-        <div className="select-lang-wrapper">
-          <select
-            name="lang"
-            value={storageValue}
-            onChange={(e) => handleChangeLang(e)}
-          >
-            <option value={"en"}>EN</option>
-            <option value={"ru"}>RU</option>
-          </select>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">{t("navlink.home")}</Link>
-            </li>
-            <li>
-              <Link href="/about">{t("navlink.about")}</Link>
-            </li>
-            <li>
-              <Link href="/services">{t("navlink.services")}</Link>
-            </li>
-            <li>
-              <Link href="/contact">{t("navlink.contact")}</Link>
-            </li>
-            <li>
-              <Link href="/team">{t("navlink.team")}</Link>
-            </li>
-          </ul>
+        <h2>Logo</h2>
+        <nav className="header__nav-links">
+          <Link href="index.html#hero">Home</Link>
+          <Link href="index.html#about">About</Link>
+          <Link href="index.html#services">Services</Link>
+          <Link href="index.html#testimonials">Testimonials</Link>
+          <Link href="index.html#contact">Contact</Link>
         </nav>
+        <div className="burger" id="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </header>
   );

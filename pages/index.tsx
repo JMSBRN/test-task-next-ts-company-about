@@ -1,4 +1,4 @@
-import WelcomePage from "@/components/WelcomePage";
+import HomePage from "@/components/HomePage";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetServerSideProps } from "next/types";
@@ -34,7 +34,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <WelcomePage />
+        <HomePage />
       </main>
     </>
   );
