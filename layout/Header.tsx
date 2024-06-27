@@ -19,8 +19,9 @@ const Header: React.FC = () => {
   const handleChangeLang = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = e.target.value;
     setStorageValue(selectedLanguage);
-    i18n.changeLanguage(selectedLanguage);
-    window.localStorage.setItem("lang", JSON.stringify(selectedLanguage));
+    i18n.changeLanguage(selectedLanguage).then(() => {
+      window.localStorage.setItem("lang", JSON.stringify(selectedLanguage));
+    });
   };
 
   return (
